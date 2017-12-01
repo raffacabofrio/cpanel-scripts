@@ -1,13 +1,13 @@
 #script(kid) para diminuir tamanho de uma conta cPanel antes de migrar. No meu primeiro uso consegui reduzir de 88gb para 2gb. 
 
-#ATEN«√O! antes de executar avise seu cliente e tenha certeza que ele fez backup dos emails.
+#ATEN√á√ÉO! antes de executar avise seu cliente e tenha certeza que ele fez backup dos emails.
 
-# 1 - login root via ssh ( n„o tenha medo )
+# 1 - login root via ssh ( n√£o tenha medo )
 
 # 2 - entrar na pasta onde ficam os emails
 cd /home/cpanel-user/mail/dominio.com.br
 
-# 3 - listar os usu·rios mais espaÁosos
+# 3 - listar os usu√°rios mais espa√ßosos
 du -hsx * | sort -rh | head -20
 
 #vc vai obter uma lista parecida com essa
@@ -26,7 +26,7 @@ du -hsx * | sort -rh | head -20
 702M    roseli
 506M    ciclano
 
-# 4 - pra casa usu·rio acima limpar a pasta dele
+# 4 - pra casa usu√°rio acima limpar a pasta dele
 
 for MAIL_USER in anapaula pedrofernandes everton beatriz vistoria adm vanessa fulano vendassg roseli ciclano
 do
@@ -38,5 +38,5 @@ do
 done
 
 
-#todo: vc poderia obter a lista de usu·rios de forma autom·tica.
-#mas eu prefiro assim pois fica mais claro o que est· sendo feito.
+#todo: vc poderia obter a lista de usu√°rios de forma autom√°tica.
+#mas eu prefiro assim pois fica mais claro o que est√° sendo feito.
